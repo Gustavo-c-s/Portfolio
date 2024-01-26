@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    background-image: url('../imagem/fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(37, 37, 37, 0.897);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    margin: 0;
+    font-size: 35px;
+    color: rgb(212, 212, 212);
+    align-items: center;
+}
+
+h2 {
+
+    font-size: 25px;
+    color: rgb(155, 4, 74);
+
+}
+
+h3 {
+    font-size: 25px;
+    color: rgb(155, 4, 74);
+
+}
+
+h5 {
+    font-size: 25px;
+    color: rgb(155, 4, 74);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+p {
+    color: rgb(212, 212, 212);
+    margin: 10px;
+}
+
+.ra {
+    color: rgb(202, 245, 11);
+    font-size: 13px;
+    display: none;
+
+
+}
+
+.td {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+
+}
+
+.conh {
+    position: relative;
+    top: 50%;
+    left: 10%;
+    display: flex;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow-x: hidden; 
+}
+
+.conteudo {
+    position: relative;
+    left: 30%;
+    width: 33%;
+}
+
+.name {
+    position: relative;
+    left: 10%;
+    display: flex;
+    width: max-content;
+}
+
+.sobre {
+    text-align: left;
+    cursor: pointer;
+}
+
+.pjt {
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    top: 15%;
+    left: 30%;
+
+}
+
+.mim {
+    background-color: rgba(59, 58, 58, 0.897);
+    top: 0;
+    left: 0;
+    width: fit-content;
+    font-size: 15px;
+    display: none;
+    border: 1px solid #ccc;
+    margin: auto;
+    text-align: justify;
+}
+
+.cont {
+    text-align: center;
+    background-color: rgba(59, 58, 58, 0.897);
+    top: 0;
+    left: 0;
+    width: fit-content;
+    font-size: 15px;
+    display: none;
+    border: 1px solid #ccc;
+
+}
+
+.rs {
+    position: relative;
+    text-align: center;
+    text-align: left;
+    left: 50%;
+}
+
+.contato {
+    font-size: 15px;
+    position: relative;
+    left: 70%;
+    width: 300px;
+    
+}
+
+.conta {
+    text-align: left;
+    width: 300px;
+    background-color: rgba(59, 58, 58, 0.897);
+    margin-bottom: 0;
+    margin: 0;
+}
+
+.imge {
+    margin-left: 15px;
+   
+}
+
+a {
+    color: black;
+    font-weight: bold;
+
+}
+
+img {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    display: inline-block;
+
+}
