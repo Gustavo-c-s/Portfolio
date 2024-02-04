@@ -119,6 +119,16 @@ p {
     overflow: visible;
     
 }
+.app{
+    position: relative;
+    padding: 10px;
+    width: auto;
+    height: 290px;    
+    transition: transform 0.5s ease-in-out
+}
+.app:hover{
+    transform: scale(1.2)
+}
 .tour:hover {
     transform: scale(1.2)
     
@@ -171,9 +181,8 @@ p {
 .a{
     position: relative;
     left: 5%;
-    
-
 }
+
 .contato {
     font-size: 15px;
     position: relative;
@@ -199,6 +208,7 @@ p {
     margin-left: 15px;
 
 }
+
 a {
     color: black;
     font-weight: bold;
@@ -206,7 +216,7 @@ a {
 }
 
 img {
-    width: 30px;
+    width: 45px;
     height: auto;
     margin-right: 5px;
     display: inline-block;
