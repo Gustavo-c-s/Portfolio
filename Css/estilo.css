@@ -40,19 +40,22 @@ p {
 .td {
     position: absolute;
     top: 10%;
-    width: 100%;
+    
 }
 
 .name {
     margin-top: 75px;
     position: relative;
     left: 10%;
-    display: flex;
-    width: max-content;
+    display:flex;
+    width: 1000px;
+    border: 8px double rgb(34, 253, 253);
+    border-radius: 15px;
+    padding:15px;
 }
 
 .icon{
-    display: block;
+    
     position: relative;
 }
 
@@ -62,7 +65,9 @@ p {
     width: 150px;
     height: auto;
     border-radius: 100px;
-    left: 50%;
+    left: 110%;
+    
+    
 }
 
 .sobre {
@@ -118,7 +123,9 @@ p {
     padding: 10px;
     overflow: visible;
     margin-top: 20px;
-    
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
 }
 .app{
     position: relative;
@@ -140,6 +147,17 @@ p {
     width: 350px;
     height: auto;    
     transition: transform 0.5s ease-in-out;
+}
+
+.cardapio{
+    position: relative;
+    padding: 10px;
+    width: 350px;
+    height: auto;    
+    transition: transform 0.5s ease-in-out;
+}
+.cardapio:hover{
+    transform: scale(1.2);
 }
 
 .cont {
@@ -222,4 +240,10 @@ img {
     margin-right: 5px;
     display: inline-block;
     border-radius: 5px;
+    
 }
+.i{
+    
+    padding-left: 15px;
+}
+
