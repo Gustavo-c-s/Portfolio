@@ -1,16 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    
     background-image: url('../imagem/fundo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: rgba(37, 37, 37, 0.897);
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     font-size: 40px;
-    color: rgb(212, 212, 212);
+    color: rgb(255, 255, 255);
     align-items: center;
 }
 
@@ -38,43 +42,43 @@ p {
 }
 
 .td {
+    width: 100%;
     position: absolute;
     top: 10%;
-    
+    display: inline;
 }
 
 .name {
     margin-top: 75px;
     position: relative;
     left: 10%;
-    display:flex;
-    width: 1000px;
+    display: flex;
+
     border: 8px double rgb(34, 253, 253);
     border-radius: 15px;
-    padding:15px;
+    padding: 15px;
+
 }
 
-.icon{
-    
+.icon {
+
     position: relative;
 }
 
 .ft {
     background-color: rgb(155, 4, 74);
-    position: relative;
+    margin-top: 20px;
     width: 150px;
     height: auto;
-    border-radius: 100px;
-    left: 110%;
-    
-    
+    border-radius: 50%;
+    margin-left: 100%;
 }
 
 .sobre {
     position: relative;
-    margin-top: 50px;
-    text-align: left;
+    text-align: center;
     margin: 0;
+
 }
 
 .mim {
@@ -104,12 +108,13 @@ p {
 
 
 }
-.descr{
+
+.descr {
     display: block;
-    
+
 }
 
-.box {
+/*.box {
     border-radius: 5px;
     position: relative;
     display: flex;
@@ -126,37 +131,40 @@ p {
     gap: 10px;
     margin-bottom: 30px;
     padding-bottom: 20px;
-}
-.app{
+*/
+.app {
     position: relative;
     padding: 10px;
     width: auto;
-    height: 290px;    
+    height: 290px;
     transition: transform 0.5s ease-in-out
 }
-.app:hover{
+
+.app:hover {
     transform: scale(1.2)
 }
+
 .tour:hover {
     transform: scale(1.2)
-    
 }
+
 .tour {
     position: relative;
     padding: 10px;
     width: 350px;
-    height: auto;    
+    height: auto;
     transition: transform 0.5s ease-in-out;
 }
 
-.cardapio{
+.cardapio {
     position: relative;
     padding: 10px;
     width: 350px;
-    height: auto;    
+    height: auto;
     transition: transform 0.5s ease-in-out;
 }
-.cardapio:hover{
+
+.cardapio:hover {
     transform: scale(1.2);
 }
 
@@ -166,7 +174,7 @@ p {
     left: 15%;
     width: max-content;
     font-size: 15px;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     position: relative;
     margin-top: 20px;
     border-radius: 5px;
@@ -197,7 +205,7 @@ p {
     left: 10%;
 }
 
-.a{
+.a {
     position: relative;
     left: 5%;
 }
@@ -237,13 +245,151 @@ a {
 img {
     width: 45px;
     height: auto;
-    margin-right: 5px;
     display: inline-block;
     border-radius: 5px;
-    
 }
-.i{
-    
+
+.i {
+
     padding-left: 15px;
 }
 
+
+/*novo portifolio*/
+img {
+    width: 45px;
+    height: auto;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#nome {
+    border: 8px double black;
+    margin: 50px 150px 20px 150px;
+    padding: 50px 50px 20px 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between
+}
+
+#ftperfil {
+    background-color: rgb(155, 4, 74);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#icon {
+    margin-top: 60px;
+}
+
+#icon a {
+    margin-right: 10px;
+}
+
+#menu {
+    background-color:  rgb(155, 4, 74);
+    position: sticky;
+    top: 10px;
+    float: right;
+    margin-right: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#main {
+    margin: auto;
+    width: 50%;
+    margin-top: 90px;
+    padding: 30px;
+    display: table;
+
+}
+
+#main h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+#skill {
+    text-align: center;
+
+}
+
+#skill img {
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+
+}
+
+.box {
+    height: 400px;
+    display: flex;
+    background-color: rgba(73, 73, 73, 0.247);
+    border: 3px solid rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.box p {
+    margin: 30px 10px 30px 10px;
+
+}
+
+.i {
+    float: right;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.meno {
+    text-align: center; 
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.199);
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+.meno ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.meno ul li {
+    display: inline;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.meno ul li a {
+    text-decoration: none;
+}
+.meno ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+.meno ul li {
+    display: inline;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.meno ul li a {
+    text-decoration: none;
+}
+a{
+    color: rgb(255, 255, 255);
+}
+footer{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 15px;
+}

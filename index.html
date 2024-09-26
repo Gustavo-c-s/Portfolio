@@ -9,45 +9,72 @@
 </head>
 
 <body>
-    <div class="td">
-        <div class="name">
-            <div class="icon">
-                <h1>print( 'Gustavo Cordeiro Santos' )</h1>
-                <a href="https://github.com/Gustavo-c-s" target="_blank"><img src="./imagem/github.jpg"
-                        title="GitHub"></a>
-                <a href="https://www.linkedin.com/in/gustavo-santos-36b47a263/" target="_blank"><img
-                        src="./imagem/linkedin.jpg" title="Linkedin"></a>
-                <img class="ft" src="./imagem/Eu2022semfundo.png" title="Gustavo C.Santos">
-            </div>
-
-        </div>
-        <div class="conteudo">
-            <div class="sobre">
-                <h2>Sobre {</h2>
-                <div class="mim">
-                    <p>Olá, meu nome é Gustavo, tenho 28 anos <br><br>
-                        Estudante de Análise e Desenvolvimento de Sistemas. Meu foco principal é o desenvolvimento
-                        front-end,<br>
-                        e estou sempre em busca de oportunidades para aplicar e
-                        aprimorar minhas habilidades em linguagens de programação.<br><br>
-                        Nas horas vagas, gosto de assistir um anime, dou uma corrida ao ar<br>
-                        livre para por os pesamentos em dia, viciado em café, adora animais principal cachorros,<br>
-                        com um sonho de viajar pelo mundo e conhecer lugares novos.<br>
-                    </p>
+    <header>
+        <div id="nome">
+            <div>
+                <h1>Gustavo Cordeiro Santos</h1>
+                <div id="icon">
+                    <a href="https://github.com/Gustavo-c-s" target="_blank"><img src="./imagem/github.jpg"
+                            title="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/gustavo-santos-36b47a263/" target="_blank"><img
+                            src="./imagem/linkedin.jpg" title="Linkedin"></a>
+                    <a href="https://wa.me/5521973247900" target="_blank"><img src="./imagem/whatsapp.jpg"
+                            title="WhatsApp"></a>
                 </div>
-                <h2>}</h2>
             </div>
+            <div><img id="ftperfil" src="./imagem/Eu2022semfundo.png" title="Gustavo C.Santos"></div>
+        </div>
+    </header>
+    <div id="menu">
+        <p><a href="#nome">| Home |</a><a href="#sobre">| Sobre |</a><a href="#contato">| Contato |</a><a
+                href="#projeto">| Projetos |</a></p>
+    </div>
 
-            <div class="pjt">
-                <h2>Projetos {</h2>
+    <main id="main">
+        <div id="sobre">
+            <h2>Sobre eu</h2>
+            <p>Olá, meu nome é Gustavo,
 
-                <div class="box">
+                Estudante de Análise e Desenvolvimento de Sistemas na universidade Estacio de Sá.<br>
+                Participando do programa de Qualificação Profissional - Residência em TIC/Software do Serratec - Parque
+                Tecnológico da Região Serrana.<br>
+                Estou sempre em busca de oportunidades para aplicar e aprimorar minhas habilidades em linguagens de
+                programação.<br>
+                Nas horas vagas, gosto de assistir um anime, dou uma corrida ao ar livre para por os pesamentos em dia,
+                viciado em café, adora animais principal cachorros,
+                com um sonho de viajar pelo mundo e conhecer lugares novos.</p>
+        </div>
+        <div id="skill">
+            <h2>Skils</h2>
+            <p style="margin-left: 55px; margin-top:20px;">
+                <img src="./imagem/java_logo.jpg" title="Java">
+                <img src="./imagem/python.jpg" title="Python">
+                <img src="./imagem/pgadmin.png" title="PgAdmin">
+                <img src="./imagem/JS.png" title="JavaScript">
+                <img src="./imagem/react.png" title="React">
+                <img src="./imagem/Tsx.png" title="TypeScript">
+                <img src="./imagem/css.png " title="CSS">
+                <img src="./imagem/html.png" title="HMTL">
+            </p>
+        </div>
+        <div id="projeto">
+            <h2>Projetos</h2>
+            <div>
+                <div class="meno">
+                    <ul>
+                        <li><a href="#" onclick="showProject(event,1)">Cardapio |</a></li>
+                        <li><a href="#" onclick="showProject(event,2)">GPS |</a></li>
+                        <li><a href="#" onclick="showProject(event,3)">TourQuest</a></li>
+                    </ul>
+                </div>
+
+                <div id="project-1" class="box">
                     <img class="cardapio" src="./imagem/Cardapio.png" alt="cardapio">
                     <div class="descr">
+                        <img class="i" src="./imagem/html.png">
+                        <img class="i" src="./imagem/tailwind.png">
+                        <img class="i" src="./imagem/JS.png">
                         <p><b>Oque vai pedir?</b>
-                            <img class="i" src="./imagem/html.png">
-                            <img class="i" src="./imagem/tailwind.png">
-                            <img class="i" src="./imagem/JS.png">
                         </p>
                         <hr>
                         <p>Projeto é focado na criação de um site de pedidos,
@@ -63,21 +90,22 @@
                     </div>
                 </div>
 
-                <div class="box">
+
+                <div id="project-2" class="box" style="display: none;">
                     <img class="app" src="./imagem/app.jpeg" alt="Para onde?">
                     <div class="descr">
+                        <img class="i" src="./imagem/css.png">
+                        <img class="i" src="./imagem/react.png">
+                        <img class="i" src="./imagem/Tsx.png">
                         <p><b>Para onde?</b>
-                            <img class="i" src="./imagem/css.png">
-                            <img class="i" src="./imagem/react.png">
-                            <img class="i" src="./imagem/Tsx.png">
                         </p>
                         <hr>
                         <p>Um projeto baseado no TourQuest, mas simples utilizando o GPS.<br><br>
-                            Descrição do projeto: Utilizando o GPS ele pega sua localização atual e <br>
-                            com uma barra de buscar para você escolher um destino assim contruindo uma rota pelo
+                            Descrição do projeto: Utilizando o GPS, ele pega sua localização atual,
+                            utilizando uma barra de buscar para você escolher o destino assim contruindo uma rota pelo
                             mapa,<br>
                             informando a distancia e o tempo ate o destino.<br><br>
-                            Objetivos: Testa as ferramentas de geolocalização do React.<br><br><br>
+                            Objetivos: Testa as ferramentas de geolocalização do React.<br>
                             <hr>
                             <a href="https://github.com/Gustavo-c-s/App-de-Localizacao"
                                 target="_blank">Repositor-GitHub</a>
@@ -86,7 +114,8 @@
                     </div>
                 </div>
 
-                <div class="box">
+
+                <div id="project-3" class="box" style="display: none;">
                     <img class="tour" src="./imagem/projetofacul.png" alt="TourQuest">
                     <div class="descr">
                         <p><b>TourQuest</b></p>
@@ -99,61 +128,30 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="cont">
-                    <p>Projetos sendo concluidos no GitHub<br> <a href="https://github.com/Gustavo-c-s?tab=repositories"
-                            target="_blank"> 'REPOSITORIOS'</a>
-                    </p>
+                <div class="">
+                    <h3>Redes Sociais</h3>
+                    <div>
+                        <p>
+                            <a href="https://www.linkedin.com/in/gustavo-santos-36b47a263/" target="_blank"><img
+                                    src="./imagem/linkedin.jpg" title="Linkedin"></a>
+                            <a href="https://www.facebook.com/gustavo.santos.338/" target="_blank"><img
+                                    src="./imagem/face.jpg" title="Facebook"></a>
+                            <a href="https://www.instagram.com/gugaacordeiro/" target="_blank"><img
+                                    src="./imagem/insta.jpeg" title="instagran"></a>
+                            <a href="https://github.com/Gustavo-c-s" target="_blank"><img src="./imagem/github.jpg"
+                                    title="GitHub"></a>
+                        </p>
+                    </div>
                 </div>
-                <h2>}</h2>
             </div>
-            <div class="conh">
-                <h5>Conhecimentos {</h5>
-                <p style="margin-left: 55px; margin-top:20px;">
-                    <img src="./imagem/css.png">
-                    <img src="./imagem/html.png">
-                    <img src="./imagem/JS.png">
-                    <img src="./imagem/python.jpg">
-                    <img src="./imagem/react.png">
-                    <img src="./imagem/Tsx.png">
-                </p>
-                <h2>}</h2>
-            </div>
+    </main>
 
-
-        </div>
-        <div class="rs">
-            <h3>Redes Sociais{</h3>
-            <div class="a">
-                <p>
-                    <a href="https://www.linkedin.com/in/gustavo-santos-36b47a263/" target="_blank"><img
-                            src="./imagem/linkedin.jpg" title="Linkedin"></a>
-                    <a href="https://www.facebook.com/gustavo.santos.338/" target="_blank"><img src="./imagem/face.jpg"
-                            title="Facebook"></a>
-                    <a href="https://www.instagram.com/gugaacordeiro/" target="_blank"><img src="./imagem/insta.jpeg"
-                            title="instagran"></a>
-                    <a href="https://github.com/Gustavo-c-s" target="_blank"><img src="./imagem/github.jpg"
-                            title="GitHub"></a>
-                    <a href="https://wa.me/5521973247900"><img></a>
-                </p>
-            </div>
-            <h2>}</h2>
-        </div>
-
-        <div class="contato">
-            <h3>Contato {</h3>
-            <div class="conta">
-                <p><b>Email</b>: gustatere@hotmail.com</p>
-                <p><b>Telefone:</b> +55(21)97324-7900</p>
-                <a href="https://wa.me/5521973247900" target="_blank"><img src="./imagem/whatsapp.jpg" title="WhatsApp"
-                        class="imge"></a>
-            </div>
-            <h3>}</h3>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./JS/javascript.js"></script>
+    <hr>
+    <footer id="contato">
+        <p>@Criado por: Gustavo C. Santos <br> Telefone : (21) 97324-7900 <br>
+         Email: gustatere@homtmail.com</p>
+    </footer>
+    <script src="JS/javascript.js"></script>
 </body>
 
 </html>
