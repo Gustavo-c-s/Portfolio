@@ -167,6 +167,17 @@ p {
 .cardapio:hover {
     transform: scale(1.2);
 }
+.selflink {
+    position: relative;
+    padding: 10px;
+    width: 350px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.selflink:hover {
+    transform: scale(1.2);
+}
 
 .cont {
     text-align: center;
